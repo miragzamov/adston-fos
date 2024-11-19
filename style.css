@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --other-color: #eee;
+}
+
+* {
+  user-select: none;
+  user-zoom: none;
+  font-family: "Inter";
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  height: 100vh;
+  transition: 0.5s all;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#clickButton {
+  background: transparent;
+  height: 40vh;
+  width: 40vh;
+  color: var(--text-color);
+  font-size: 6vh;
+  font-weight: 900;
+  border: 1vh var(--text-color) solid;
+  border-radius: 50%;
+  margin: 5vh 0;
+}
+
+#balance {
+  color: var(--text-color);
+  font-weight: 900;
+  font-size: 8vh;
+}
+
+.floating-text {
+  position: absolute;
+  font-size: 6vh;
+  font-weight: 800;
+  color: var(--other-color);
+  opacity: 1;
+  transition: all 2s ease;
+}
+
+.float-anim {
+  color: var(--text-color);
+  transform: translateY(-300px);
+  opacity: 0;
+}
